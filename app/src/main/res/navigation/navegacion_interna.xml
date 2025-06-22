@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion_interna"
+    app:startDestination="@id/menu">
+
+    <fragment
+        android:id="@+id/lista_proveedor"
+        android:name="com.example.myapplication.lista_proveedor"
+        android:label="fragment_lista_proveedor"
+        tools:layout="@layout/fragment_lista_proveedor" >
+        <action
+            android:id="@+id/action_lista_proveedor_to_menu"
+            app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_lista_proveedor_to_crear_proveedor"
+            app:destination="@id/crear_proveedor" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.example.myapplication.menu"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menu_to_lista_proveedor"
+            app:destination="@id/lista_proveedor" />
+        <action
+            android:id="@+id/action_menu_to_lista_productos"
+            app:destination="@id/lista_productos" />
+    </fragment>
+    <fragment
+        android:id="@+id/lista_productos"
+        android:name="com.example.myapplication.lista_productos"
+        android:label="fragment_lista_productos"
+        tools:layout="@layout/fragment_lista_productos" >
+        <action
+            android:id="@+id/action_lista_productos_to_menu"
+            app:destination="@id/menu" />
+        <action
+            android:id="@+id/action_lista_productos_to_crear_producto"
+            app:destination="@id/crear_producto" />
+    </fragment>
+    <fragment
+        android:id="@+id/crear_producto"
+        android:name="com.example.myapplication.crear_producto"
+        android:label="fragment_crear_producto"
+        tools:layout="@layout/fragment_crear_producto" >
+        <action
+            android:id="@+id/action_crear_producto_to_lista_productos"
+            app:destination="@id/lista_productos" />
+    </fragment>
+    <fragment
+        android:id="@+id/crear_proveedor"
+        android:name="com.example.myapplication.crear_proveedor"
+        android:label="fragment_crear_proveedor"
+        tools:layout="@layout/fragment_crear_proveedor" >
+        <action
+            android:id="@+id/action_crear_proveedor_to_lista_proveedor"
+            app:destination="@id/lista_proveedor" />
+    </fragment>
+</navigation>

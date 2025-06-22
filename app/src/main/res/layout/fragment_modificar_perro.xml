@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F9F9"
+    tools:context=".modificar_perro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/et_modificar_perro_nombre"
+            android:hint="Nombre del Pokémon"
+            android:inputType="textPersonName"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#000000"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atributo"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/et_modificar_perro_raza"
+            android:hint="Atributo del Pokémon"
+            android:inputType="text"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#000000"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Número en Pokédex"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/et_modificar_perro_color"
+            android:hint="Número Pokédex"
+            android:inputType="number"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#000000"
+            android:paddingHorizontal="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso (kg)"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/et_modificar_perro_peso"
+            android:hint="Peso del Pokémon"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#000000"
+            android:paddingHorizontal="12dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Modificar Pokémon"
+            android:id="@+id/btn_modificar_modificar_perro"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:id="@+id/btn_modificar_to_ver"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#757575"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>

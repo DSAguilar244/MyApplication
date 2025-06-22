@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/lista_perros">
+
+    <fragment
+        android:id="@+id/lista_perros"
+        android:name="com.example.myapplication.lista_perros"
+        android:label="fragment_lista_perros"
+        tools:layout="@layout/fragment_lista_perros" >
+        <action
+            android:id="@+id/action_lista_perros_to_crear_perro"
+            app:destination="@id/crear_perro" />
+        <action
+            android:id="@+id/action_lista_perros_to_ver_perro"
+            app:destination="@id/ver_perro" />
+    </fragment>
+    <fragment
+        android:id="@+id/ver_perro"
+        android:name="com.example.myapplication.ver_perro"
+        android:label="fragment_ver_perro"
+        tools:layout="@layout/fragment_ver_perro" >
+        <action
+            android:id="@+id/action_ver_perro_to_lista_perros"
+            app:destination="@id/lista_perros" />
+        <action
+            android:id="@+id/action_ver_perro_to_modificar_perro"
+            app:destination="@id/modificar_perro" />
+    </fragment>
+    <fragment
+        android:id="@+id/crear_perro"
+        android:name="com.example.myapplication.crear_perro"
+        android:label="fragment_crear_perro"
+        tools:layout="@layout/fragment_crear_perro" >
+        <action
+            android:id="@+id/action_crear_perro_to_lista_perros"
+            app:destination="@id/lista_perros" />
+    </fragment>
+    <fragment
+        android:id="@+id/modificar_perro"
+        android:name="com.example.myapplication.modificar_perro"
+        android:label="fragment_modificar_perro"
+        tools:layout="@layout/fragment_modificar_perro" >
+        <action
+            android:id="@+id/action_modificar_perro_to_ver_perro"
+            app:destination="@id/ver_perro" />
+    </fragment>
+</navigation>
